@@ -28,6 +28,10 @@ To run this project, you'll need an api key from youtube. [Click here](https://c
 
 9. Copy your api key.
 
+## Using the api
+
+[Click here](https://developers.google.com/youtube/v3/docs/search/list) to go to the youtube api documentation to see the required params needed.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
