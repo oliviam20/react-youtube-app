@@ -6,7 +6,7 @@ To run this project, you'll need an api key from youtube. [Click here](https://c
 
 1. Click here and select a new project.
 ![Click here to select a new project](https://res.cloudinary.com/dwfzniyyh/image/upload/v1573867807/React%20youtube/youtube-api-1.png)
-![Click new project](https://res.cloudinary.com/dwfzniyyh/image/upload/v1573867807/React%20youtube/youtube-api-1.png)
+![Click new project](https://res.cloudinary.com/dwfzniyyh/image/upload/v1573867807/React%20youtube/youtube-api-2.png)
 
 2. Name your project and click Create.
 
