@@ -10,6 +10,11 @@ export default class App extends Component {
     selectedVideo: null
   };
 
+  componentDidMount() {
+    // setting a default search term for the app to mount the first time
+    this.onTermSubmit('puppy');
+  }
+
   onTermSubmit = async term => {
     const response = await youtube.get('/search', {
       params: {
@@ -18,7 +23,10 @@ export default class App extends Component {
       }
     });
 
-    this.setState({ videos: response.data.items });
+    this.setState({
+      videos: response.data.items,
+      selectedVideo: response.data.items[0]
+    });
   }
 
   onVideoSelect = video => {
@@ -34,12 +42,19 @@ export default class App extends Component {
     return (
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <p>Found {videos.length} videos</p>
-        <VideoDetail video={selectedVideo} />
-        <VideoList
-          onVideoSelect={this.onVideoSelect}
-          videos={videos}
-        />
+        <div className="ui grid">
+          <div className="ui row">
+            <div className="eleven wide column">
+              <VideoDetail video={selectedVideo} />
+            </div>
+            <div className="five wide column">
+              <VideoList
+                onVideoSelect={this.onVideoSelect}
+                videos={videos}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
