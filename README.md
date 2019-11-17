@@ -1,5 +1,7 @@
 # React Youtube
 
+![app screenshot](https://res.cloudinary.com/dwfzniyyh/image/upload/v1573991245/React%20youtube/react-youtube-screenshot.png)
+
 ## API key
 
 To run this project, you'll need an api key from youtube. [Click here](https://console.developers.google.com) to get you key from google.
