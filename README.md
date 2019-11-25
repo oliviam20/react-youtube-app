@@ -34,6 +34,8 @@ To run this project, you'll need an api key from youtube. [Click here](https://c
 
 [Click here](https://developers.google.com/youtube/v3/docs/search/list) to go to the youtube api documentation to see the required params needed.
 
+The api is called using [axios](https://github.com/axios/axios).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
